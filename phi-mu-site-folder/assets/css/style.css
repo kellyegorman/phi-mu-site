@@ -1,0 +1,806 @@
+/*
+Theme Name: Office
+Theme URI: http://ThemeWagon.com/
+Author: ThemeWagon
+Author URI: http://ThemeWagon.com/
+Description: Creative is a single-page HTML template based on Bootstrap 3
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* ==========================================================================
+   Global
+   ========================================================================== */
+   body {
+    font-size: 15px;
+    line-height: 24px;
+    background: #F8FAFF;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.btn-primary {
+  background-color: pink; /* Change background color to pink */
+  color: white; /* Text color to white */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 4px; /* Optional: Add rounded corners */
+  transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.blog-title {
+    color: pink;
+    font-family: "Lato";
+    font-variant: small-caps;
+}
+
+.main-content {
+    margin-top: 80px;
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+.section-global-wrapper {
+    position: relative;
+}
+
+.container-fluid-kamn,
+.container-kamn {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-kamn {
+  display: flex;
+  align-items: center; /* Vertically center items */
+}
+
+.container-kamn .col-md-6 {
+  flex: 1; /* Equal width for both columns */
+}
+
+
+/* Media Queries */
+@media (min-width: 1068px) and (max-width: 1400px) {
+    .post-sidebar {
+        margin-top: 15px;
+        border: 1px solid #DDD;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1060px) {
+    .post-sidebar {
+        width: 204px;
+        margin-top: 15px;
+        border: 1px solid #DDD;
+        padding: 5px;
+        float: right;
+    }
+}
+
+/* Blog Post Styles */
+.blog-post {
+    margin-bottom: 30px;
+}
+
+.blog-image {
+    margin-bottom: 20px;
+}
+
+.carousel-inner {
+    width: 100%;
+    max-height: 500px !important;
+}
+
+.form-group {
+    padding: 20px;
+}
+
+ul li {
+    list-style: none;
+}
+
+h3.col-xs-12 {
+    margin-top: -20px;
+}
+
+.content-space {
+    margin-top: 40px;
+}
+
+.center {
+    text-align: center;
+}
+
+.block-author {
+    color: #D7002E;
+}
+
+.btn-info {
+    float: right;
+}
+
+.icon-space {
+    display: inline-block;
+    padding: 10px;
+}
+
+.current span {
+    color: pink;
+}
+
+.title-text {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .2px;
+    font-size: 40px;
+}
+
+.img-pad {
+    padding-right: 23px;
+}
+
+img {
+  float:left;
+}
+h3 {
+  float:right;
+}
+
+.myImage {
+  float: left;
+  height: 75px;
+  width: 235px;
+  font-family: Veranda;
+}
+.heading {
+  float:right;
+}
+
+
+.white-text {
+    font-style: italic;
+    color: white;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+header#intro {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust as needed */
+  background: none; /* Remove any background set here */
+  overflow: hidden; /* Ensure text doesn't overflow */
+}
+
+.header-content {
+  max-width: 800px; /* Limit the width of the header content */
+  padding: 20px;
+}
+
+.header-img {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.header-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* Ensure the image covers the entire header */
+}
+
+.header-text h3,
+.header-text h1 {
+    margin: 0;
+    padding: 0;
+}
+
+header .header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 80%; /* Adjust width as needed */
+}
+
+
+
+header .sub-header-text {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+header .btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: pink;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+header .btn:hover {
+  background-color: pink;
+}
+
+@media (max-width: 768px) {
+  header .header-text {
+      font-size: 1.8em;
+  }
+
+  header .sub-header-text {
+      font-size: 1em;
+  }
+}
+
+#header-image {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Adjust height as per your image */
+  overflow: hidden;
+}
+
+#header-image .blog-post {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Adjust opacity as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-overlay .container {
+  text-align: center;
+  color: pink;
+}
+
+.header-overlay h3 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.header-overlay h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.header-overlay .typed-cursor {
+  font-size: 24px;
+  animation: blink 0.7s infinite;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.overlay-text h3, .overlay-text h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.overlay-text .typed {
+  color: black;
+}
+
+.overlay-text .typed-cursor {
+  opacity: 1;
+  animation: blink 0.7s infinite;
+}
+
+.overlay-text .light {
+  color: black; /* Change color to black */
+}
+
+
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
+a {
+    color: pink;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+a:hover {
+    color: #888;
+    text-decoration: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+address {
+    margin-top: 28px;
+}
+
+@media (min-width: 50px) and (max-width: 988px) {
+    address {
+        margin-top: 28px;
+        margin-left: 21px;
+    }
+}
+
+@media (min-width: 988px) and (max-width: 1200px) {
+    address {
+        margin-top: 28px;
+        margin-left: -58px;
+    }
+}
+
+/* Nav Pills */
+.nav-pills > li.selected > a,
+.nav-pills > li.selected > a:hover,
+.nav-pills > li.selected > a:focus {
+    color: #ffffff;
+    background-color: pink;
+}
+
+/* Pills Centered */
+.nav-pills-centered > .nav-pills {
+    text-align: center;
+}
+
+.nav-pills-centered > .nav-pills > li {
+    float: none;
+    display: inline;
+}
+
+.nav-pills-centered > .nav-pills > li > a,
+.nav-pills-centered > .nav-pills > li > span {
+    display: inline-block;
+    padding: 5px 14px;
+}
+
+.nav-pills-centered > .nav-pills > li > a.active,
+.nav-pills-centered > .nav-pills > li > span.active,
+.nav-pills-centered > .nav-pills > li > a.selected,
+.nav-pills-centered > .nav-pills > li > span.selected {
+    color: #ffffff;
+    background-color: #ffc0cb;
+}
+
+/* Navbar */
+.active {
+    background: hotpink !important;
+    color: black;
+}
+
+.navbar {
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+
+.navbar-nav > li > a {
+  background: lightpink !important;
+  color: pink;
+    padding: 10px 15px;
+    margin: 5px 5px;
+    border-radius: 4px;
+}
+
+.navbar-brand {
+    z-index: 9999px;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-top: 0px;
+}
+
+.side-left {
+    background: pink;
+    box-shadow: 3px grey;
+    color: white;
+    padding: 30px;
+    letter-spacing: .9px;
+}
+
+@media (min-width: 800px) {
+    .side-left {
+        height: 1248px;
+    }
+}
+
+.banner-text {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 50px;
+}
+
+#banners {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#banner-home {
+    background-image: url('../img/slider/1.jpg');
+    height: 300px;
+    margin-bottom: 30px;
+    padding-top: 120px;
+}
+
+@media (min-width: 100px) and (max-width: 800px) {
+    #banner-home {
+        height: 450px;
+    }
+}
+
+#banner {
+    margin-top: 0px;
+}
+
+.intro-boxes {
+  position: relative;
+  margin-top: -50px; /* Adjust this value to control the overlay */
+  z-index: 10;
+}
+
+.intro-boxes-wrapper {
+  background: pink;
+  color: pink;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: -50px; /* Adjust this value to control the overlay */
+  position: relative;
+}
+
+.intro-box {
+  padding: 20px;
+  margin-bottom: 30px;
+  background: white;
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.intro-box i {
+  margin-bottom: 20px;
+  color: hotpink;
+  background: white;
+
+}
+
+.intro-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.intro-box p {
+  font-size: 16px;
+  color: #061F20;
+  text-align: center;
+}
+
+.intro-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/* styles.css */
+header#intro {
+  width: 100%;
+  height: 100vh; /* 100% of the viewport height */
+  background: url('assets/img/header.png') no-repeat center center;
+  background-size: cover; /* Ensure the image covers the entire header */
+  position: relative;
+  color: white; /* Ensure text is visible on the background */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  text-align: center;
+}
+
+.container {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.table {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-text {
+    text-align: center;
+}
+
+h3.light.black,
+h1.black.typed,
+.typed-cursor {
+    color: black;
+
+    display: inline-block;
+    margin-left: 5px; /* Adjust as needed */
+    animation: cursor-animation 1s infinite;
+
+}
+
+.typed-cursor {
+  opacity: 1;
+  font-size: 1.5em;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+
+@media (min-width: 50px) and (max-width: 768px) {
+    .header a.brand {
+        width: 170px;
+        margin-top: -41px;
+        position: absolute;
+        font-size: 37px;
+    }
+}
+
+.paragraph-text {
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    line-height: 24px;
+}
+
+.left2 {
+    text-align: left;
+    letter-spacing: .7px;
+    font-size: 13px;
+    color: pink;
+}
+
+.spacing {
+    margin-bottom: 80px;
+}
+
+.sidebar-right {
+    font-size: 13px;
+    font-weight: bold;
+    color: pink;
+}
+
+.featured-img {
+    padding: 0 15px 15px 0;
+}
+
+p.blog-text {
+    font-size: 16px;
+    letter-spacing: .1px;
+    font-family: 'Arial';
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.btn-sm {
+    margin-left: 21px;
+}
+
+.office-logo {
+    width: 100px;
+}
+
+@media (max-width: 768px) {
+    .office-logo {
+        height: 100px;
+        width: 60px;
+    }
+}
+
+/* Feedback Section */
+.feedback-section {
+    padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+    .feedback-section {
+        padding-bottom: 40px;
+    }
+}
+
+.feedback-section .feedback-form .btn-captcha-refresh {
+    margin: 0 0 0 25px;
+}
+
+.feedback-section .address-section {
+    text-align: center;
+    padding-top: 50px;
+}
+
+@media (max-width: 767px) {
+  .feedback-section .address-section {
+      padding-top: 30px;
+  }
+}
+
+.feedback-section .contact-section {
+  padding: 50px 0;
+}
+
+@media (max-width: 767px) {
+  .feedback-section .contact-section {
+      padding: 30px 0;
+  }
+}
+
+.feedback-section .contact-section .contact-info {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .feedback-section .contact-section .contact-info {
+      padding-bottom: 20px;
+  }
+}
+
+.feedback-section .social-section {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .feedback-section .social-section {
+      padding-bottom: 40px;
+  }
+}
+
+.feedback-section .social-section a {
+  display: inline-block;
+  margin: 0 10px;
+  color: pink;
+  transition: all .3s;
+}
+
+.feedback-section .social-section a:hover {
+  color: #888;
+}
+
+/* Utility Classes */
+.text-white {
+  color: white !important;
+}
+
+.bg-primary {
+  background-color: pink !important;
+}
+
+.text-primary {
+  color: pink !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+@keyframes flash {
+  0%,
+  100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+}
+
+@keyframes cursor-animation {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+}
+
+/*
+* ==========================================================================
+* Services Section
+* ==========================================================================
+*/
+.services-section {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.services-section .services-header {
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+.services-section .services-header .services-header-title {
+  margin-bottom: 15px;
+}
+.services-section .services-row-tail {
+  margin-top: 50px;
+}
+.services-section .services-icon {
+  color: pink;
+  margin-bottom: 30px;
+}
+.services-section .services-title {
+  margin-bottom: 15px;
+}
+.services-section .services-desc {
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .services-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .services-section .services-group {
+    margin-bottom: 50px;
+  }
+  .services-section .services-row-tail {
+    margin-top: 0;
+  }
+}
+.services-icon .fa:hover{
+    padding: 0 10px 0 10px;
+    color: white;
+    background: palevioletred;
+    border-radius: 3px; 
+    transition:.4s;  
+}
+.services-group{
+  padding: 10px;
+  background: palevioletred;
+  color: white;
+}
+.service-icon{
+  color: white;
+}
+
+

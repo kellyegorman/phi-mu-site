@@ -11,6 +11,7 @@ python3 -m http.server 8080
 
 
 Or view this video demo (as of 7/7/2024):
+
 ![5442C823-F5F3-4BCA-9477-2D619376CBD8-ezgif com-optimize](https://github.com/kellyegorman/phi-mu-site/assets/159587786/0259393a-548a-4042-985e-ff87293330f9)
 
 [Full Video: Phi Mu @ CWRU](https://youtu.be/0fgjyQRzDH4?si=RSAoInKEcVm-uLtq)
